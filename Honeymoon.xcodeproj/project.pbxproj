@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9309AD85296DDE34006FDF75 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9309AD84296DDE34006FDF75 /* Launch Screen.storyboard */; };
 		93897F40296DD0C400D21E30 /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897F3F296DD0C400D21E30 /* HoneymoonApp.swift */; };
 		93897F42296DD0C400D21E30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897F41296DD0C400D21E30 /* ContentView.swift */; };
 		93897F44296DD0C500D21E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93897F43296DD0C500D21E30 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9309AD84296DDE34006FDF75 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		93897F3C296DD0C400D21E30 /* Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeymoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93897F3F296DD0C400D21E30 /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		93897F41296DD0C400D21E30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		93897F3E296DD0C400D21E30 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				9309AD84296DDE34006FDF75 /* Launch Screen.storyboard */,
 				93897F53296DD84B00D21E30 /* Sounds */,
 				93897F3F296DD0C400D21E30 /* HoneymoonApp.swift */,
 				93897F41296DD0C400D21E30 /* ContentView.swift */,
@@ -130,6 +133,7 @@
 			files = (
 				93897F54296DD84B00D21E30 /* Sounds in Resources */,
 				93897F47296DD0C500D21E30 /* Preview Assets.xcassets in Resources */,
+				9309AD85296DDE34006FDF75 /* Launch Screen.storyboard in Resources */,
 				93897F44296DD0C500D21E30 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
