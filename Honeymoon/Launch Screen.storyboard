@@ -15,15 +15,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgound" translatesAutoresizingMaskIntoConstraints="NO" id="FDq-MZ-5hT">
-                                <rect key="frame" x="1" y="1" width="391" height="850"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-honeymoon-app" translatesAutoresizingMaskIntoConstraints="NO" id="FjL-Yq-VLp">
+                                <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0wH-ge-3nB"/>
+                                    <constraint firstAttribute="height" constant="128" id="K8d-zD-vnN"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="FDq-MZ-5hT" secondAttribute="trailing" constant="1" id="FJ4-wD-oOl"/>
-                            <constraint firstItem="FDq-MZ-5hT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="1" id="GiN-hZ-gHF"/>
-                            <constraint firstAttribute="bottom" secondItem="FDq-MZ-5hT" secondAttribute="bottom" constant="1" id="NrB-ky-ztF"/>
-                            <constraint firstItem="FDq-MZ-5hT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="1" id="qmn-N0-Bh8"/>
+                            <constraint firstAttribute="trailing" secondItem="FDq-MZ-5hT" secondAttribute="trailing" id="FJ4-wD-oOl"/>
+                            <constraint firstItem="FDq-MZ-5hT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GiN-hZ-gHF"/>
+                            <constraint firstItem="FjL-Yq-VLp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="L9o-Uc-3ZE"/>
+                            <constraint firstAttribute="bottom" secondItem="FDq-MZ-5hT" secondAttribute="bottom" id="NrB-ky-ztF"/>
+                            <constraint firstItem="FjL-Yq-VLp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ar4-e0-uOe"/>
+                            <constraint firstItem="FDq-MZ-5hT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="qmn-N0-Bh8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -34,5 +43,6 @@
     </scenes>
     <resources>
         <image name="backgound" width="2048" height="2049"/>
+        <image name="logo-honeymoon-app" width="280" height="129"/>
     </resources>
 </document>
