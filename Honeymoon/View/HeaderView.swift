@@ -16,5 +16,6 @@ struct HeaderView: View {
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderView()
+            .previewLayout(.fixed(width: 375, height: 80))
     }
 }
