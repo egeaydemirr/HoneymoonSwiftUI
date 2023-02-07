@@ -23,9 +23,8 @@ struct HeaderView: View {
             
             Image("logo-honeymoon-pink")
                 .resizable()
-                .frame(height: 28)
                 .scaledToFit()
-            
+                .frame(height: 28)
             Spacer()
             
             Button(action:{
