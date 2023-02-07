@@ -12,9 +12,11 @@ struct ContentView: View {
         VStack {
             HeaderView()
             Spacer()
-            CardView(honeymoon: honeymoonData[0])
+            CardView(honeymoon: honeymoonData[2])
                 //Add padding to the cards later on
                 .padding()
+            
+            Spacer()
         }
     }
 }
