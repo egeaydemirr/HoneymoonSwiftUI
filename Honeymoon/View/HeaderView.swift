@@ -9,7 +9,35 @@ import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Button(action: {
+                //:Action
+                print("Information")
+            }){
+                Image(systemName: "info.circle")
+                    .font(.system(size: 24, weight: .regular))
+            }
+            .accentColor(.primary)
+            
+            Spacer()
+            
+            Image("logo-honeymoon-pink")
+                .resizable()
+                .frame(height: 28)
+                .scaledToFit()
+            
+            Spacer()
+            
+            Button(action:{
+                //Action
+                print("Guide")
+            }){
+                Image(systemName: "questionmark.circle")
+                    .font(.system(size:24, weight: .regular))
+            }
+            .accentColor(.primary)
+        }
+        .padding()
     }
 }
 
