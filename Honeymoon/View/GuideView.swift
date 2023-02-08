@@ -38,12 +38,24 @@ struct GuideView: View {
                         icon: "xmark.circle")
                     GuideComponent(
                         title: "Book",
-                        subtitle: "Top the button",
+                        subtitle: "Tap the button",
                         description: "Our selection of honeymoon resorts is perfect setting for you to embark your new life together.",
                         icon: "checkmark.square")
                 }
+                Spacer(minLength: 20)
                 
-                Spacer(minLength: 10)
+                Button(action: {
+                    //:Action
+                    print("A button was tapped")
+                }){
+                    Text("Continue".uppercased())
+                        .font(.headline)
+                        .padding()
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .background(Capsule().fill(.pink))
+                        .foregroundColor(.white)
+                    
+                }
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(.top, 15)
