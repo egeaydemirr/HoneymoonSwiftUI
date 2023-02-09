@@ -12,6 +12,36 @@ struct InfoView: View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .center, spacing: 20) {
                 HeaderComponent()
+                
+                Spacer(minLength: 10)
+                
+                Text("App Info")
+                    .fontWeight(.black)
+                    .modifier(TitleModifier())
+                
+                HStack{
+                    Text("Application").foregroundColor(.gray)
+                    Spacer()
+                    Text("Honeymoon")
+                }
+                Text("Credits")
+                    .fontWeight(.black)
+                    .modifier(TitleModifier())
+                
+                HStack{
+                    Text("Photos").foregroundColor(.gray)
+                    Spacer()
+                    Text("Unsplash")
+                }
+                Spacer(minLength: 10)
+                
+                Button(action: {
+                    //Action
+                    print("Button was tapped")
+                }){
+                    Text("Continue".uppercased())
+                        
+                }
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(.top, 15)
