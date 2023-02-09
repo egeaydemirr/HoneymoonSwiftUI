@@ -56,11 +56,28 @@ struct InfoView_Previews: PreviewProvider {
 struct AppInfoView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
+            RowAppInfoView(ItemOne: "Application", ItemTwo: "Honeymoon")
+            RowAppInfoView(ItemOne: "Compability", ItemTwo: "iPhone and iPad")
+            RowAppInfoView(ItemOne: "Developer", ItemTwo: "Ege Aydemir")
+            RowAppInfoView(ItemOne: "Designer", ItemTwo: "Robert Petlas")
+            RowAppInfoView(ItemOne: "WebSite", ItemTwo: "github.com/egeaydemirr")
+            RowAppInfoView(ItemOne: "Version", ItemTwo: "1.0.0")
+        }
+    }
+}
+
+struct RowAppInfoView: View {
+    // MARK: - Properties
+    var ItemOne: String
+    var ItemTwo: String
+    var body: some View {
+        VStack {
             HStack{
-                Text("Application").foregroundColor(.gray)
+                Text(ItemOne).foregroundColor(.gray)
                 Spacer()
-                Text("Honeymoon")
+                Text(ItemTwo)
             }
+            Divider()
         }
     }
 }
