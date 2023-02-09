@@ -40,7 +40,7 @@ struct InfoView: View {
                     print("Button was tapped")
                 }){
                     Text("Continue".uppercased())
-                        
+                        .modifier(ButtonModifier())
                 }
             }
             .frame(minWidth: 0, maxWidth: .infinity)
