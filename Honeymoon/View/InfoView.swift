@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct InfoView: View {
+    // MARK: - Properties
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .center, spacing: 20) {
@@ -29,7 +31,8 @@ struct InfoView: View {
                 
                 Button(action: {
                     //Action
-                    print("Button was tapped")
+//                    print("Button was tapped")
+                    self.presentationMode.wrappedValue.dismiss()
                 }){
                     Text("Continue".uppercased())
                         .modifier(ButtonModifier())
