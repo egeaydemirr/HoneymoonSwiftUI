@@ -77,6 +77,8 @@ struct ContentView: View {
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
                         .offset(x: self.dragState.translation.width, y: self.dragState.translation.height)
                         .animation(.interpolatingSpring(stiffness: 120, damping: 120))
+                        .scaleEffect(self.dragState.isDragging ? 0.85 : 1)
+                        .rotationEffect(Angle(degrees: Double(self.dragState.translation.width/12)))
                         .gesture(LongPressGesture(minimumDuration: 0.01)
                             .sequenced(before: DragGesture())
                         .updating(self.$dragState, body: { (value, state, transaction) in
