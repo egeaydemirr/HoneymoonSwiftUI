@@ -67,13 +67,26 @@ struct ContentView: View {
         VStack {
             // MARK: - Header
             HeaderView(showGuideView: $showGuide, showInfoView: $showInfo)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
+                .animation(.default)
             Spacer()
             // MARK: - Cards
             ZStack{
                 ForEach(cardViews) {cardView in
                     cardView
-                        .zIndex(self.isTopCard(cardView: cardView) ? 1:0)
-                    
+                        .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
+                        .gesture(LongPressGesture(minimumDuration: 0.01)
+                            .sequenced(before: DragGesture())
+                        .updating(self.$dragState, body: { (value, state, transaction) in
+                          switch value {
+                          case .first(true):
+                            state = .pressing
+                          case .second(true, let drag):
+                            state = .dragging(translation: drag?.translation ?? .zero)
+                          default:
+                            break
+                          }
+                        }))
                 }
             }
             .padding(.horizontal)
@@ -82,6 +95,8 @@ struct ContentView: View {
             Spacer()
             // MARK: - Footer
             FooterView(showBookingAlert: $showAlert)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
+                .animation(.default)
         }
         .alert(isPresented: $showAlert){
             Alert(title: Text("SUCCESS"),
