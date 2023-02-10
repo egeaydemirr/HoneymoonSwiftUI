@@ -21,6 +21,14 @@ struct ContentView: View {
         }
         return views
     }()
+    // MARK: - Top Card
+    
+    private func isTopCard(cardView: CardView) -> Bool {
+        guard let index = cardViews.firstIndex(where: {$0.id == cardView.id}) else {
+            return false
+        }
+        return index == 0
+    }
     
     var body: some View {
         VStack {
@@ -29,7 +37,9 @@ struct ContentView: View {
             Spacer()
             // MARK: - Card
             ZStack{
-                ForEach(cardViews) {cardView in cardView
+                ForEach(cardViews) {cardView in
+                    cardView
+                        .zIndex(self.isTopCard(cardView: cardView) ? 1:0)
                     
                 }
             }
