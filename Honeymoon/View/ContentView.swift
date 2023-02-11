@@ -75,6 +75,15 @@ struct ContentView: View {
                 ForEach(cardViews) {cardView in
                     cardView
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
+                        .overlay(
+                            ZStack{
+                                // MARK: - Xmark
+                                Image(systemName: "x.circle")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 128))
+                                    .shadow(color:Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.6)), radius: 12, x: 0, y: 0)
+                            }
+                        )
                         .offset(x: self.isTopCard(cardView: cardView) ?  self.dragState.translation.width : 0, y: self.isTopCard(cardView: cardView) ?  self.dragState.translation.height : 0)
                         .animation(.interpolatingSpring(stiffness: 120, damping: 120))
                         .scaleEffect(self.dragState.isDragging && self.isTopCard(cardView: cardView) ? 0.85 : 1)
