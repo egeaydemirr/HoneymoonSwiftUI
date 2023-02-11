@@ -10,6 +10,7 @@ import SwiftUI
 struct FooterView: View {
     // MARK: - Properties
     @Binding var showBookingAlert: Bool
+    let haptics = UINotificationFeedbackGenerator()
     
     var body: some View {
         HStack {
@@ -22,6 +23,7 @@ struct FooterView: View {
 //                print("Success!")
                 playSound(sound: "sound-click", type: "mp3")
                 self.showBookingAlert.toggle()
+                self.haptics.notificationOccurred(.success)
             }){
                 Text("Book Destination".uppercased())
                     .font(.system(.subheadline, design: .rounded))
