@@ -135,7 +135,9 @@ struct ContentView: View {
                             guard case .second(true, let drag?) = value else {
                                 return
                             }
-                            if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold {
+                            if drag.translation.width < -self.dragAreaThreshold || drag.translation.width >
+                                self.dragAreaThreshold {
+                                playSound(sound: "sound-rise", type: "mp3")
                                 self.moveCards()
                             }
                         })

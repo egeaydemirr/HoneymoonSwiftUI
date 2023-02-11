@@ -15,13 +15,20 @@
 		93897F42296DD0C400D21E30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897F41296DD0C400D21E30 /* ContentView.swift */; };
 		93897F44296DD0C500D21E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93897F43296DD0C500D21E30 /* Assets.xcassets */; };
 		93897F47296DD0C500D21E30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93897F46296DD0C500D21E30 /* Preview Assets.xcassets */; };
-		93897F54296DD84B00D21E30 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 93897F53296DD84B00D21E30 /* Sounds */; };
 		938AD75D2992A14A00CFCBBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD75C2992A14A00CFCBBE /* SceneDelegate.swift */; };
 		938AD75F2992A15100CFCBBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938AD75E2992A15100CFCBBE /* LaunchScreen.storyboard */; };
 		938AD7632992A34700CFCBBE /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD7622992A34700CFCBBE /* FooterView.swift */; };
 		938AD7662993E3F000CFCBBE /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD7652993E3F000CFCBBE /* HeaderComponent.swift */; };
 		938AD7682993E4C400CFCBBE /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD7672993E4C400CFCBBE /* GuideComponent.swift */; };
 		938AD76A2993FD3D00CFCBBE /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD7692993FD3D00CFCBBE /* GuideView.swift */; };
+		938AD76C299552AD00CFCBBE /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD76B299552AD00CFCBBE /* InfoView.swift */; };
+		938AD770299556F500CFCBBE /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD76F299556F500CFCBBE /* TitleModifier.swift */; };
+		938AD7732995590C00CFCBBE /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD7722995590C00CFCBBE /* ButtonModifier.swift */; };
+		938AD7752997D1F700CFCBBE /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD7742997D1F700CFCBBE /* SymbolModifier.swift */; };
+		938AD7782997EC5D00CFCBBE /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD7772997EC5D00CFCBBE /* CardTransition.swift */; };
+		938AD77B2997EFAF00CFCBBE /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AD77A2997EFAF00CFCBBE /* PlaySound.swift */; };
+		938AD77E2997F24700CFCBBE /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 938AD77C2997F24600CFCBBE /* sound-click.mp3 */; };
+		938AD77F2997F24700CFCBBE /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 938AD77D2997F24600CFCBBE /* sound-rise.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,13 +41,20 @@
 		93897F41296DD0C400D21E30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93897F43296DD0C500D21E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93897F46296DD0C500D21E30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		93897F53296DD84B00D21E30 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		938AD75C2992A14A00CFCBBE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		938AD75E2992A15100CFCBBE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		938AD7622992A34700CFCBBE /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		938AD7652993E3F000CFCBBE /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		938AD7672993E4C400CFCBBE /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
 		938AD7692993FD3D00CFCBBE /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		938AD76B299552AD00CFCBBE /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		938AD76F299556F500CFCBBE /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		938AD7722995590C00CFCBBE /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		938AD7742997D1F700CFCBBE /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
+		938AD7772997EC5D00CFCBBE /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
+		938AD77A2997EFAF00CFCBBE /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		938AD77C2997F24600CFCBBE /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
+		938AD77D2997F24600CFCBBE /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 				9307A816299295C4009D7F52 /* HeaderView.swift */,
 				938AD7622992A34700CFCBBE /* FooterView.swift */,
 				938AD7692993FD3D00CFCBBE /* GuideView.swift */,
+				938AD76B299552AD00CFCBBE /* InfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,7 +102,7 @@
 			children = (
 				93897F3E296DD0C400D21E30 /* Honeymoon */,
 				93897F43296DD0C500D21E30 /* Assets.xcassets */,
-				93897F53296DD84B00D21E30 /* Sounds */,
+				938AD7802997F25400CFCBBE /* Sound */,
 				93897F3D296DD0C400D21E30 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,10 +118,13 @@
 		93897F3E296DD0C400D21E30 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				938AD7792997EF9000CFCBBE /* Helper */,
+				938AD7762997EC4400CFCBBE /* Extension */,
 				938AD7642993E39100CFCBBE /* Component */,
 				9307A8092992891A009D7F52 /* Model */,
 				9307A80E29928DEC009D7F52 /* View */,
 				9307A80F29928DF7009D7F52 /* Data */,
+				938AD7712995572C00CFCBBE /* Modifiers */,
 				93897F45296DD0C500D21E30 /* Preview Content */,
 				9307A81229928F5B009D7F52 /* AppDelegate.swift */,
 				938AD75C2992A14A00CFCBBE /* SceneDelegate.swift */,
@@ -130,6 +148,41 @@
 				938AD7672993E4C400CFCBBE /* GuideComponent.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		938AD7712995572C00CFCBBE /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				938AD76F299556F500CFCBBE /* TitleModifier.swift */,
+				938AD7722995590C00CFCBBE /* ButtonModifier.swift */,
+				938AD7742997D1F700CFCBBE /* SymbolModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		938AD7762997EC4400CFCBBE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				938AD7772997EC5D00CFCBBE /* CardTransition.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		938AD7792997EF9000CFCBBE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				938AD77A2997EFAF00CFCBBE /* PlaySound.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		938AD7802997F25400CFCBBE /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				938AD77D2997F24600CFCBBE /* sound-rise.mp3 */,
+				938AD77C2997F24600CFCBBE /* sound-click.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93897F54296DD84B00D21E30 /* Sounds in Resources */,
+				938AD77F2997F24700CFCBBE /* sound-rise.mp3 in Resources */,
 				93897F47296DD0C500D21E30 /* Preview Assets.xcassets in Resources */,
+				938AD77E2997F24700CFCBBE /* sound-click.mp3 in Resources */,
 				938AD75F2992A15100CFCBBE /* LaunchScreen.storyboard in Resources */,
 				93897F44296DD0C500D21E30 /* Assets.xcassets in Resources */,
 			);
@@ -208,13 +262,19 @@
 				938AD75D2992A14A00CFCBBE /* SceneDelegate.swift in Sources */,
 				938AD7682993E4C400CFCBBE /* GuideComponent.swift in Sources */,
 				9307A817299295C4009D7F52 /* HeaderView.swift in Sources */,
+				938AD7782997EC5D00CFCBBE /* CardTransition.swift in Sources */,
+				938AD770299556F500CFCBBE /* TitleModifier.swift in Sources */,
+				938AD76C299552AD00CFCBBE /* InfoView.swift in Sources */,
 				9307A80B29928942009D7F52 /* HoneymoonModel.swift in Sources */,
 				9307A81129928E57009D7F52 /* CardView.swift in Sources */,
+				938AD7732995590C00CFCBBE /* ButtonModifier.swift in Sources */,
 				938AD7632992A34700CFCBBE /* FooterView.swift in Sources */,
 				938AD7662993E3F000CFCBBE /* HeaderComponent.swift in Sources */,
 				938AD76A2993FD3D00CFCBBE /* GuideView.swift in Sources */,
+				938AD7752997D1F700CFCBBE /* SymbolModifier.swift in Sources */,
 				9307A81329928F5B009D7F52 /* AppDelegate.swift in Sources */,
 				93897F42296DD0C400D21E30 /* ContentView.swift in Sources */,
+				938AD77B2997EFAF00CFCBBE /* PlaySound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
