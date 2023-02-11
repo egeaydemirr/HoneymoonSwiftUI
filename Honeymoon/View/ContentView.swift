@@ -14,15 +14,30 @@ struct ContentView: View {
     @State var showInfo: Bool = false
     @GestureState private var dragState = DragState.inactive
     private var dragAreaThreshold: CGFloat = 65.0
+    @State private var lastCardIndex: Int = 1
     
     // MARK: - CardViews
-    var cardViews: [CardView] = {
+    @State var cardViews: [CardView] = {
         var views = [CardView]()
         for index in 0..<2 {
             views.append(CardView(honeymoon: honeymoonData[index]))
         }
         return views
     }()
+    
+    // MARK: - Move The Card
+    
+    private func moveCards() {
+        cardViews.removeFirst()
+        self.lastCardIndex += 1
+        
+        let honeymoon = honeymoonData[lastCardIndex % honeymoonData.count]
+        
+        let newCardView = CardView(honeymoon: honeymoon)
+        
+        cardViews.append(newCardView)
+    }
+    
     // MARK: - Top Card
     
     private func isTopCard(cardView: CardView) -> Bool {
