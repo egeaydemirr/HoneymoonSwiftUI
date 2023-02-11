@@ -77,8 +77,11 @@ struct ContentView: View {
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
                         .overlay(
                             ZStack{
-                                // MARK: - Xmark
+                                // MARK: - X-mark Symbol
                                 Image(systemName: "x.circle")
+                                    .modifier(SymbolModifier())
+                                // MARK: - Heart Symbol
+                                Image(systemName: "heart.circle")
                                     .modifier(SymbolModifier())
                             }
                         )
